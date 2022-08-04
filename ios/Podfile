@@ -12,6 +12,10 @@ target 'D2GoExample' do
     :hermes_enabled => true
   )
 
+  # Additional ops from torchvision
+  # Note that the LibTorchvision has not been released yet
+  pod 'LibTorchvision-DONOTUSE', '~> 0.13.0'
+
   target 'D2GoExampleTests' do
     inherit! :complete
     # Pods for testing

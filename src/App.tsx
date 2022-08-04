@@ -247,8 +247,6 @@ export default function App() {
       const inputs = await packFn(image);
       Measurement.measure('pack');
 
-      console.log('type', inputs);
-
       Measurement.mark('inference');
       const output = await inferenceFn(model, inputs);
       Measurement.measure('inference');

@@ -217,6 +217,9 @@ dependencies {
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
+    // 1. Add torchvision ops library
+    implementation "org.pytorch:torchvision_ops:0.13.1"
+
     // Used to control the version of libfbjni.so packaged into the APK
     extraJNILibs("com.facebook.fbjni:fbjni:0.2.2")
 
